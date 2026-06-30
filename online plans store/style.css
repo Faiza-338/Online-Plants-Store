@@ -1,0 +1,48 @@
+/* Basic body style */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Full container width navbar */
+.full-navbar {
+    width: 100%;
+}
+
+/* Navbar hover effect */
+.nav-link {
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.nav-link:hover {
+    background-color: #14532d;
+    color: white;
+}
+
+/* Custom unordered list design without framework classes */
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list li {
+    background-color: #dcfce7;
+    border: 1px solid #16a34a;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.custom-list li:hover {
+    background-color: #bbf7d0;
+    cursor: pointer;
+}
+
+/* Error message style */
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}

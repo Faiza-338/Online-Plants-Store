@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Oasis - Home</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-green-50">
+
+    <!-- Navbar -->
+    <div class="navbar bg-green-700 text-white px-6 full-navbar">
+        <div class="flex-1">
+            <a href="index.html" class="text-2xl font-bold">Blooming Oasis</a>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto mt-8 px-4">
+        <div class="hero bg-white rounded-lg shadow-md">
+            <div class="hero-content flex-col lg:flex-row">
+                <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?w=700" alt="Indoor Plants" class="rounded-lg w-full lg:w-1/2">
+                <div>
+                    <h1 class="text-4xl font-bold text-green-800">Welcome to Blooming Oasis</h1>
+                    <p class="py-6 text-gray-700">
+                        Blooming Oasis is an online plant store for indoor plants and simple plant care information.
+                        We help people bring fresh green beauty inside their homes.
+                    </p>
+                    <a href="products.html" class="btn bg-green-700 text-white hover:bg-green-800">View Plants</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plant Matchmaker Quiz -->
+    <section class="max-w-6xl mx-auto mt-10 px-4">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-green-800 mb-4">Plant Matchmaker Quiz</h2>
+            <p class="mb-4 text-gray-700">Answer these simple questions and find a plant for you.</p>
+
+            <div class="grid md:grid-cols-3 gap-4">
+                <div>
+                    <label class="font-semibold">Sunlight Preference</label>
+                    <select id="sunlight" class="select select-bordered w-full mt-2">
+                        <option value="">Select One</option>
+                        <option value="low">Low Light</option>
+                        <option value="bright">Bright Light</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="font-semibold">Care Level</label>
+                    <select id="care" class="select select-bordered w-full mt-2">
+                        <option value="">Select One</option>
+                        <option value="easy">Easy Care</option>
+                        <option value="medium">Medium Care</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="font-semibold">Pet Friendly</label>
+                    <select id="pet" class="select select-bordered w-full mt-2">
+                        <option value="">Select One</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No Problem</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="quizBtn" class="btn bg-green-700 text-white hover:bg-green-800 mt-5">Get Recommendation</button>
+
+            <p id="quizResult" class="mt-4 font-semibold text-green-800"></p>
+        </div>
+    </section>
+
+    <!-- Collage Section -->
+    <section class="max-w-6xl mx-auto mt-10 px-4">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">Plant Photo Collage</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500" alt="Plant" class="rounded-lg shadow-md h-48 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=500" alt="Plant" class="rounded-lg shadow-md h-48 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=500" alt="Plant" class="rounded-lg shadow-md h-48 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=500" alt="Plant" class="rounded-lg shadow-md h-48 w-full object-cover">
+        </div>
+    </section>
+
+    <!-- Popular Houseplants -->
+    <section class="max-w-6xl mx-auto mt-10 px-4">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">Popular Houseplants</h2>
+        <div class="grid md:grid-cols-3 gap-5">
+            <div class="card bg-white shadow-md">
+                <figure><img src="https://images.unsplash.com/photo-1614594895304-fe7116ac3b58?w=500" alt="Monstera"></figure>
+                <div class="card-body">
+                    <h3 class="card-title">Monstera</h3>
+                    <p>A beautiful indoor plant with large green leaves.</p>
+                </div>
+            </div>
+
+            <div class="card bg-white shadow-md">
+                <figure><img src="https://images.unsplash.com/photo-1598880940080-ff9a29891b85?w=500" alt="Snake Plant"></figure>
+                <div class="card-body">
+                    <h3 class="card-title">Snake Plant</h3>
+                    <p>Easy to care for and perfect for beginners.</p>
+                </div>
+            </div>
+
+            <div class="card bg-white shadow-md">
+                <figure><img src="https://images.unsplash.com/photo-1604762524889-3e2fcc145683?w=500" alt="Peace Lily"></figure>
+                <div class="card-body">
+                    <h3 class="card-title">Peace Lily</h3>
+                    <p>A lovely plant with white flowers and green leaves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curated Collections -->
+    <section class="max-w-6xl mx-auto mt-10 px-4">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">Curated Collections</h2>
+        <div class="grid md:grid-cols-3 gap-5">
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Beginner Plant Set</h3>
+                <p class="mt-2">Simple plants for new plant parents.</p>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Low Light Set</h3>
+                <p class="mt-2">Plants that can grow in less sunlight.</p>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Desk Plant Set</h3>
+                <p class="mt-2">Small plants for study table and office desk.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plant Care Guides -->
+    <section class="max-w-6xl mx-auto mt-10 px-4">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">Plant Care Guides</h2>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <ul class="list-disc ml-6 text-gray-700">
+                <li>Water your plant when the top soil feels dry.</li>
+                <li>Keep indoor plants near indirect sunlight.</li>
+                <li>Clean plant leaves once a week.</li>
+                <li>Use a pot with drainage holes.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- About Short Section -->
+    <section class="max-w-6xl mx-auto mt-10 px-4 mb-10">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-green-800 mb-4">About Blooming Oasis</h2>
+            <p class="text-gray-700">
+                Blooming Oasis started with a simple dream to make homes greener and healthier.
+                We provide indoor plants, care tips, and simple guidance for plant lovers.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center bg-green-700 text-white p-6">
+        <aside>
+            <p>Blooming Oasis Online Plant Store</p>
+            <p id="footerDate"></p>
+        </aside>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
